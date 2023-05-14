@@ -11,7 +11,7 @@ USER ${UID}
 
 WORKDIR /app
 
-COPY --chown=${UID} app/helloworld ./helloworld
+COPY --chown=${UID} app/hello.html ./hello.html
 
 EXPOSE 8000
 

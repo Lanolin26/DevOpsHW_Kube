@@ -16,7 +16,7 @@ docker_build:
 	docker build -t ${DOCKER_IMAGE_FILL}:latest .
 
 docker_run: 
-	docker run --name test --rm -p 8080:8000 ${DOCKER_IMAGE_FILL}:latest
+	docker run --name test --rm -it -p 8080:8000 ${DOCKER_IMAGE_FILL}:latest
 
 docker_push:
 	docker tag ${DOCKER_IMAGE_FILL}:latest ${DOCKER_IMAGE_FILL}:${DOCKER_IMAGE_VERSION}
