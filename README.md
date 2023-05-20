@@ -142,7 +142,7 @@ spec:
           ports:
             - name: web-port
               containerPort: 8000
-          liveProbe:
+          livenessProbe:
             httpGet:
               path: /hello.html
               port: web-port
